@@ -51,10 +51,6 @@ float: right;
    list-style: none;
    float: left;
    margin: 10px 0px;
-  
-   
-   
-  
 }
 .menu ul li a {
    color: #f8f8f8;
@@ -510,3 +506,7 @@ input[name="browser"] {
 }
 
 /* Footer Section End */
+
+.error {
+   border: 1px solid red;
+}
