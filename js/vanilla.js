@@ -6,9 +6,9 @@ function validate(){
    var atposition=x.indexOf("@");  
    var dotposition=x.lastIndexOf("."); 
    var num=document.getElementById("num").value;
-   var textarear=document.getElementById("writtext").value;
+   var textarea=document.getElementById("writtext").value;
    
-   // For Name Input validation
+   // For Name validation
    if ( name==null || name=="" ){  
       alert("You Should Must Include First Name");
       return false;  
@@ -18,7 +18,7 @@ function validate(){
       return false;  
     }
 
-    // For Phone Number Input validation
+    // For Phone Number validation
     if ( isNaN(num) ){
       alert('Enter Only Number');
       return false;
@@ -32,18 +32,18 @@ function validate(){
       return false;
    }
 
-    // For Email Input validation
+    // For Email validation
    if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
       alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);
       return false; 
    }
 
    // For Textarea validation
-   if ( textarear.length < 50) {
+   if ( textarea.length < 50) {
       alert("You Should Write Maximum 50 Letter");
       return false;
    }
    else{
      return true;
      }
-   }
+}
