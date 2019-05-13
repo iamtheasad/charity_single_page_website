@@ -10,15 +10,19 @@ function validate(){
    
    // For Name Input validation
    if ( name==null || name=="" ){  
-      alert("You Should Must be Include First Name");
+      alert("You Should Must Include First Name");
       return false;  
     }
     if ( lname==null || lname=="" ){  
-      alert("You Should Must be Include Last Name");  
+      alert("You Should Must Include Last Name");  
       return false;  
     }
 
     // For Phone Number Input validation
+    if ( isNaN(num) ){
+      alert('Enter Only Number');
+      return false;
+    }
    if ( num=="" ){
      alert('You Must Add Number');
      return false;
@@ -27,10 +31,6 @@ function validate(){
       alert("Minmum 9 Number Require");
       return false;
    }
-   if ( isNaN(num) ){
-      alert('Enter Only Number');
-      return false;
-    }
 
     // For Email Input validation
    if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
